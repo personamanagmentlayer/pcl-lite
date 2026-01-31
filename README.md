@@ -1,63 +1,65 @@
 # PCL-Lite: Persona Control Language — Embedded Runtime
 
-**PCL-Lite** est une implémentation légère et portable du protocole _Persona Control Language_ (PCL), conçue pour transformez n'importe quelle session de chat IA (ChatGPT, Claude, Gemini, DeepSeek) en un **système d'exploitation multi-agents**.
+**PCL-Lite** is a lightweight, portable implementation of the *Persona Control Language* (PCL) protocol. It turns any AI chat session (ChatGPT, Claude, Gemini, DeepSeek) into a **multi-agent orchestration system** with no external infrastructure.
 
-Il s'injecte via un simple prompt ("bootstrap") et permet d'orchestrer, de configurer et de faire collaborer des personas spécialisés sans aucune infrastructure externe.
+Inject it via a single bootstrap prompt to orchestrate, configure, and coordinate specialized personas directly in your conversation.
 
-## 🚀 Pourquoi utiliser PCL-Lite ?
+## Why PCL-Lite?
 
-- **Multi-Agents Instantané** : Transformez une conversation linéaire en un atelier collaboratif.
-- **Zéro Installation** : Copiez-collez le bootstrap dans votre LLM préféré. C'est tout.
-- **Collaboration Structurée** : Activez un _Architecte_ et un _Critique_ simultanément pour obtenir des solutions plus robustes.
-- **Contrôle Granulaire** : Ajustez le ton, la verbosité, et les règles de fusion des réponses.
+- **Instant multi-agent workflows** — Turn a linear chat into a structured collaborative session.
+- **Zero setup** — Copy and paste the bootstrap into your preferred LLM. No installation required.
+- **Structured collaboration** — Activate an *Architect* and a *Critic* at once for more robust outcomes.
+- **Fine-grained control** — Adjust tone, verbosity, and response merge rules.
 
-## 📂 Versions Disponibles
+## Available bootstrap files
 
-Ce dépôt propose plusieurs profils de bootstrap adaptés à vos besoins et à la fenêtre de contexte de votre modèle :
+This repository provides bootstrap prompts tailored to context window size and use case:
 
-### PCL-Lite "Lite" (Recommandé pour démarrer)
+### PCL-Lite "Lite" (recommended to get started)
 
-Une version optimisée pour la rapidité et l'économie de tokens. Elle contient l'essentiel pour gérer des personas et des workflows simples.
+A token-efficient bootstrap with everything needed to manage personas and simple workflows.
 
-- **Idéal pour** : Sessions rapides, modèles standards (GPT-3.5, Haiku, Gemini Flash), prototypage.
-- **Fonctionnalités** : Activation, CRUD (Création/Modif), Configuration (Ton/Verbosité), Séquences simples.
-- **Fichiers** :
-  - 🇫🇷 **Français** : [bootstrap_lite.md](./bootstrap_lite_fr.md)
-  - 🇬🇧 **Anglais** : [bootstrap_lite_en.md](./bootstrap_lite_en.md)
+- **Best for**: Quick sessions, standard models (GPT-3.5, Haiku, Gemini Flash), prototyping.
+- **Features**: Activation, CRUD, configuration (tone/verbosity), simple sequences, teams, presets.
+- **Files**:
+  - **English**: [bootstrap_lite_en.md](./bootstrap_lite_en.md)
+  - **French**: [bootstrap_lite_fr.md](./bootstrap_lite_fr.md)
 
-## 🛠️ Guide de Démarrage Rapide
+## Quick start
 
-1.  Ouvrez le fichier correspondant à la version souhaitée (ex: `bootstrap_lite.md`).
-2.  **Copiez** l'intégralité du contenu brut.
-3.  **Collez** le texte dans une nouvelle conversation avec votre IA.
-4.  Attendez la confirmation du système (ex: _"PCL-Lite Runtime Initialized"_).
-5.  Utilisez les commandes `/persona` :
+1. Open the bootstrap file for your language (e.g. `bootstrap_lite_en.md`).
+2. Copy the entire contents.
+3. Paste into a new conversation with your AI assistant.
+4. Wait for confirmation (e.g. *"PCL-Lite Bootstrap v1.0 Ready"*).
+5. Use `/persona` commands:
 
 ```bash
-# Vérifier les personas disponibles
+# List available personas
 /persona list
 
-# Activer un Architecte et un Expert Sécurité
+# Activate an Architect and a Security Expert
 /persona +ARCHI +SEC
 
-# Leur confier une tâche
-/persona task "Concevoir une architecture pour une API bancaire sécurisée"
+# Assign a task
+/persona task "Design a secure architecture for a banking API"
 
-# Changer le leader de la réponse
+# Set the response lead
 /persona primary=SEC
+
+# Get persona recommendations for a task
+/persona suggest "audit our auth flow"
 ```
 
-## Standard PCL
+## PCL standard
 
-PCL-Lite est une version embarquée du **Standard PCL** (Persona Control Language).
-Pour la spécification complète du langage et les implémentations lourdes, visitez le dépôt principal :
-👉 **[https://github.com/personamanagmentlayer/pcl](https://github.com/personamanagmentlayer/pcl)**
+PCL-Lite is an embedded variant of the full **PCL** (Persona Control Language) standard. For the complete specification and full implementations, see the main repository:
 
-## Licence
+**[https://github.com/personamanagmentlayer/pcl](https://github.com/personamanagmentlayer/pcl)**
 
-Ce projet est distribué sous licence **Apache-2.0**.
-Voir le fichier [LICENSE](./LICENSE) pour plus de détails.
+## License
+
+This project is licensed under **Apache-2.0**. See [LICENSE](./LICENSE) for details.
 
 ---
 
-_PCL-Lite est un composant du projet Persona Management Layer._
+*PCL-Lite is part of the Persona Management Layer project.*

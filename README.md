@@ -15,6 +15,8 @@ Inject it via a single bootstrap prompt to orchestrate, configure, and coordinat
 
 Repository layout: general bootstraps at root; Image and Video in **`bootstrap-image/`** and **`bootstrap-video/`**.
 
+**→ [guides/](./guides/)** — Usage guides for standard, image, and video (how to start, commands, platforms, workflow).
+
 This repository provides bootstrap prompts tailored to context window size and use case:
 
 ### PCL-Lite "Lite" (recommended to get started)

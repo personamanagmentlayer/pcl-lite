@@ -1,6 +1,6 @@
 # PCL-Lite Image & Video — Usage Examples
 
-This document gives **concrete usage examples** for [PCL-Lite Image](./image/bootstrap_lite_image_en.md) and [PCL-Lite Video](./video/bootstrap_lite_video_en.md). Copy the bootstrap of your choice into your chat first, then use the commands below.
+This document gives **concrete usage examples** for [PCL-Lite Image](./bootstrap-image/bootstrap_lite_image_en.md) and [PCL-Lite Video](./bootstrap-video/bootstrap_lite_video_en.md). Copy the bootstrap of your choice from the [`bootstrap-image/`](./bootstrap-image/) or [`bootstrap-video/`](./bootstrap-video/) folder into your chat first, then use the commands below.
 
 ---
 
@@ -210,7 +210,7 @@ Then activate the suggested personas and set video context.
 
 | Goal                     | Image                                      | Video                                       |
 | ------------------------ | ------------------------------------------ | ------------------------------------------- |
-| **Bootstrap**            | [bootstrap_lite_image_en.md](./image/bootstrap_lite_image_en.md) | [bootstrap_lite_video_en.md](./video/bootstrap_lite_video_en.md) |
+| **Bootstrap**            | [bootstrap-image/](./bootstrap-image/) · [bootstrap_lite_image_en.md](./bootstrap-image/bootstrap_lite_image_en.md) | [bootstrap-video/](./bootstrap-video/) · [bootstrap_lite_video_en.md](./bootstrap-video/bootstrap_lite_video_en.md) |
 | **Context**              | `aspect`, `style`, `format`                 | `aspect`, `duration`, `format`, `platform`  |
 | **List personas**        | `/persona list`                             | `/persona list`                             |
 | **Load team**            | `/persona team load <team-id>`              | `/persona team load <team-id>`              |

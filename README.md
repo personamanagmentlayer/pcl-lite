@@ -75,9 +75,6 @@ A dedicated profile for **video production, editing, motion design, and delivery
 /persona task "Outline a 60s product launch video with captions strategy"
 ```
 
-**→ [README-examples-video.md](./README-examples-video.md)** — Usage examples for PCL-Lite Video (scripts, storyboards, social, accessibility, delivery).  
-**→ [README-examples.md](./README-examples.md)** — Usage examples for PCL-Lite Image and Video (if present).
-
 ## Quick start
 
 1. Open the bootstrap file for your language (e.g. `bootstrap_lite_en.md`).

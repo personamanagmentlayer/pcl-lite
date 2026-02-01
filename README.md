@@ -25,6 +25,52 @@ A token-efficient bootstrap with everything needed to manage personas and simple
   - **English**: [bootstrap_lite_en.md](./bootstrap_lite_en.md)
   - **French**: [bootstrap_lite_fr.md](./bootstrap_lite_fr.md)
 
+### PCL-Lite Image (image and visual workflows)
+
+A dedicated profile for **image creation, visual design, and asset production**. Same `/persona` commands with 12 image-focused personas and optional image context (aspect ratio, style, format).
+
+- **Best for**: Image prompts, visual consistency, brand assets, accessibility (alt text, contrast), social visuals, print specs.
+- **Personas**: Visual Designer, Illustrator, Photo Editor, Brand Visual Guardian, Infographic, Icon Designer, Accessibility Visual, Layout Expert, Color Expert, Technical Visual, Print Prepress, Social Visual.
+- **Teams**: brand-guardians, accessibility-visual, social-content, print-ready, infographic-team, visual-critique.
+- **Files**:
+  - **English**: [bootstrap_lite_image_en.md](./image/bootstrap_lite_image_en.md)
+  - **French**: [bootstrap_lite_image_fr.md](./image/bootstrap_lite_image_fr.md)
+
+```bash
+# Activate visual and accessibility personas
+/persona +VISUAL_DESIGNER +A11Y_VISUAL
+
+# Set image context for next generation
+/persona image aspect=16:9 style=minimal format=png
+
+# Task for image-related output
+/persona task "Describe a hero banner for a fintech app, with alt text"
+```
+
+### PCL-Lite Video (video and motion workflows)
+
+A dedicated profile for **video production, editing, motion design, and delivery**. Same `/persona` commands with 12 video-focused personas and optional video context (aspect ratio, duration, format, platform).
+
+- **Best for**: Scripts, storyboards, editing advice, captions and accessibility, social/short-form, color grading, sound design, delivery specs.
+- **Personas**: Video Editor, Script & Continuity, Motion Designer, Color Grading, Sound Video, Storyboard, Narrative Video, Creative Director Video, Brand Video, Social Video, Accessibility Video, Technical Video.
+- **Teams**: edit-room, accessibility-video, social-video, narrative-team, technical-delivery, full-production.
+- **Files**:
+  - **English**: [bootstrap_lite_video_en.md](./video/bootstrap_lite_video_en.md)
+  - **French**: [bootstrap_lite_video_fr.md](./video/bootstrap_lite_video_fr.md)
+
+```bash
+# Activate editor and accessibility personas
+/persona +VIDEO_EDITOR +A11Y_VIDEO
+
+# Set video context
+/persona video aspect=9:16 duration=60s format=mp4 platform=tiktok
+
+# Task for video-related output
+/persona task "Outline a 60s product launch video with captions strategy"
+```
+
+**→ [README-examples.md](./README-examples.md)** — Dedicated usage examples for PCL-Lite Image and Video (copy-paste commands and scenarios).
+
 ## Quick start
 
 1. Open the bootstrap file for your language (e.g. `bootstrap_lite_en.md`).

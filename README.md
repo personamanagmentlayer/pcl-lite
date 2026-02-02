@@ -15,7 +15,8 @@ Inject it via a single bootstrap prompt to orchestrate, configure, and coordinat
 
 Repository layout: general bootstraps at root; Image, Video, Audio, and Slides in **`bootstrap-image/`**, **`bootstrap-video/`**, **`bootstrap-audio/`**, and **`bootstrap-slides/`**.
 
-**→ [guides/](./guides/)** — Usage guides for standard, image, video, audio, and slides (how to start, commands, platforms, workflow).
+**→ [Wiki](https://github.com/personamanagmentlayer/pcl-lite/wiki)** — Full documentation: getting started, guides index, examples to try, best practices (one bootstrap per conversation, text-only vs multimodal).  
+**→ [guides/](./guides/)** — Usage guides in the repo (standard, image, video, audio, slides: how to start, commands, where to generate).
 
 This repository provides bootstrap prompts tailored to context window size and use case:
 

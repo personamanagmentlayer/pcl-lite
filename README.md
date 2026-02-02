@@ -13,9 +13,9 @@ Inject it via a single bootstrap prompt to orchestrate, configure, and coordinat
 
 ## Available bootstrap files
 
-Repository layout: general bootstraps at root; Image and Video in **`bootstrap-image/`** and **`bootstrap-video/`**.
+Repository layout: general bootstraps at root; Image, Video, Audio, and Slides in **`bootstrap-image/`**, **`bootstrap-video/`**, **`bootstrap-audio/`**, and **`bootstrap-slides/`**.
 
-**→ [guides/](./guides/)** — Usage guides for standard, image, and video (how to start, commands, platforms, workflow).
+**→ [guides/](./guides/)** — Usage guides for standard, image, video, audio, and slides (how to start, commands, platforms, workflow).
 
 This repository provides bootstrap prompts tailored to context window size and use case:
 
@@ -75,6 +75,44 @@ A dedicated profile for **video production, editing, motion design, and delivery
 
 # Task for video-related output
 /persona task "Outline a 60s product launch video with captions strategy"
+```
+
+### PCL-Lite Audio (podcast, voiceover, sound design)
+
+A dedicated profile for **audio production, podcast, voiceover, and sound design**. Same `/persona` commands with 12 audio-focused personas and optional audio context (duration, format, platform).
+
+**→ Bootstraps are in the [`bootstrap-audio/`](./bootstrap-audio/) folder.**
+
+- **Best for**: Scripts, episode structure, sound design, transcripts, accessibility.
+- **Personas**: Script Audio, Narrative Audio, Voice Director, Podcast Host, Editor Audio, Sound Design Audio, Music Audio, Transcription Audio, A11Y Audio, Brand Audio, Interview Audio, Technical Audio.
+- **Teams**: podcast-production, accessibility-audio, sound-design-team, full-audio-production, interview-team, technical-delivery-audio.
+- **Files**:
+  - **English**: [bootstrap_lite_audio_en.md](./bootstrap-audio/bootstrap_lite_audio_en.md)
+  - **French**: [bootstrap_lite_audio_fr.md](./bootstrap-audio/bootstrap_lite_audio_fr.md)
+
+```bash
+/persona +SCRIPT_AUDIO +A11Y_AUDIO
+/persona audio duration=30m format=mp3 platform=podcast
+/persona task "Outline a 30min podcast episode with transcript strategy"
+```
+
+### PCL-Lite Slides (presentations, pitch decks)
+
+A dedicated profile for **presentation design, pitch decks, and slide production**. Same `/persona` commands with 12 slides-focused personas and optional slides context (aspect ratio, style, format).
+
+**→ Bootstraps are in the [`bootstrap-slides/`](./bootstrap-slides/) folder.**
+
+- **Best for**: Deck structure, storytelling, pitch, data viz on slides, speaker notes, accessibility.
+- **Personas**: Slide Designer, Visual Slides, Storyteller Slides, Content Slides, Data Viz Slides, Technical Slides, Brand Slides, Pitch Slides, Speaker Coach, A11Y Slides, Education Slides, Simplifier Slides.
+- **Teams**: pitch-team, data-presentation, accessibility-slides, education-team, full-deck, technical-deck.
+- **Files**:
+  - **English**: [bootstrap_lite_slides_en.md](./bootstrap-slides/bootstrap_lite_slides_en.md)
+  - **French**: [bootstrap_lite_slides_fr.md](./bootstrap-slides/bootstrap_lite_slides_fr.md)
+
+```bash
+/persona +SLIDE_DESIGNER +PITCH_SLIDES
+/persona slides aspect=16:9 style=minimal
+/persona task "Outline a 10-slide pitch deck: problem, solution, ask"
 ```
 
 ## Quick start

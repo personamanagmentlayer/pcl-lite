@@ -4,6 +4,42 @@ How to use the **PCL-Lite Image bootstrap** (personas for visual design, illustr
 
 ---
 
+## Objective: get the best prompt, then generate
+
+PCL-Lite Image gives you **ready-to-use prompts, specs, alt text, palette** in the chat. What you do next depends on your AI:
+
+- **If your AI can generate images** (e.g. ChatGPT with DALL·E, Gemini with image gen, or any multimodal chat): use the prompt **in the same chat** — paste it into the image box or ask the AI to generate from it. PCL-Lite helps you get a better, structured prompt.
+- **If your AI doesn’t generate images**: **copy** the prompt from the chat and **paste** it into one of the tools below (Midjourney, Ideogram, etc.).
+
+---
+
+## Workflow
+
+1. **In your chat**: Paste the PCL-Lite Image bootstrap → use `/persona` commands → ask for a prompt or description (e.g. hero banner, Instagram visual).
+2. **Get the output**: The chat returns a **ready-to-use prompt** (and optionally specs, alt text, palette).
+3. **Multimodal AI**: Paste that prompt into the **image feature of the same chat** (e.g. ChatGPT image tab, Gemini image gen) and generate.
+4. **Or copy-paste**: **Copy** the prompt and **paste** it into one of the tools below if your chat doesn’t generate images.
+
+---
+
+## Where to generate images
+
+**Multimodal AI:** If your chat can generate images (e.g. ChatGPT with DALL·E, Gemini), paste the prompt **in the same chat** (image tab or image feature). Otherwise use one of the tools below:
+
+| Tool | Link | Use case |
+|------|------|----------|
+| **DALL·E** (ChatGPT Plus) | [chat.openai.com](https://chat.openai.com) — use the image tab in ChatGPT | If you already use ChatGPT; paste the prompt in the image box. |
+| **Midjourney** | [midjourney.com](https://www.midjourney.com) | High-quality art, illustrations; paste prompt in Discord. |
+| **Ideogram** | [ideogram.ai](https://ideogram.ai) | Text in images, logos, posters; paste prompt in the box. |
+| **Leonardo.AI** | [leonardo.ai](https://www.leonardo.ai) | Game art, assets, illustrations; paste prompt in the generator. |
+| **Stable Diffusion** (e.g. ClipDrop) | [clipdrop.co](https://clipdrop.co/stable-diffusion) | Free tier; paste prompt to generate. |
+| **Canva** (AI image) | [canva.com](https://www.canva.com) | Quick visuals, social; use “Apps” → “Text to image” and paste prompt. |
+| **Figma** (with AI plugins) | [figma.com](https://www.figma.com) | UI/UX visuals; use plugins that accept text prompts. |
+
+**Tip:** If the chat gave you **dimensions, style, format** (e.g. 16:9, minimal, PNG), set those in the tool before generating.
+
+---
+
 ## 1. Get the bootstrap
 
 All Image bootstraps are in the **[`bootstrap-image/`](../bootstrap-image/)** folder:
@@ -13,9 +49,9 @@ All Image bootstraps are in the **[`bootstrap-image/`](../bootstrap-image/)** fo
 
 ---
 
-## 2. Where to use it
+## 2. Where to use PCL-Lite
 
-Paste the bootstrap into any AI chat (ChatGPT, Claude, Gemini, DeepSeek, Cursor). The bootstrap is **text only**: you get **prompts, specs, and recommendations**, not generated images. Use the output in your usual image tools (DALL·E, Midjourney, Figma, etc.).
+Paste the bootstrap into any AI chat (ChatGPT, Claude, Gemini, DeepSeek, Cursor). The chat gives you **prompts, specs, and recommendations**. If the chat **can generate images** (e.g. ChatGPT Plus with DALL·E, Gemini), use that prompt in the same chat; otherwise copy it and paste into one of the tools above.
 
 ---
 

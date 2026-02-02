@@ -4,6 +4,42 @@ How to use the **PCL-Lite Video bootstrap** (personas for scripts, storyboards, 
 
 ---
 
+## Objective: get script & specs, then generate (same chat or external)
+
+PCL-Lite Video gives you **scripts, storyboards, shot lists, caption strategy, delivery specs** in the chat. What you do next depends on your AI:
+
+- **If your AI can generate video** (e.g. Gemini with video gen, ChatGPT with video, or any multimodal chat with video): use the **script or scene descriptions in the same chat** — paste them into the video feature so the AI generates from your structure. PCL-Lite helps you get a clear script and specs.
+- **If your AI doesn’t generate video**: **copy** the script or storyboard and **paste** it into one of the tools below (Runway, Synthesia, Descript, etc.).
+
+---
+
+## Workflow
+
+1. **In your chat**: Paste the PCL-Lite Video bootstrap → use `/persona` commands → ask for a script, storyboard, or specs (e.g. 60s product launch, TikTok beat sheet).
+2. **Get the output**: The chat returns **ready-to-use text** (script, shot list, caption moments, technical specs).
+3. **Multimodal AI**: Use that **script or scene descriptions in the video feature of the same chat** (if it has one) and generate.
+4. **Or copy-paste**: **Copy** the output and **paste** it into one of the tools below (script → Synthesia/Descript, storyboard → Runway/CapCut, etc.) if your chat doesn’t generate video.
+
+---
+
+## Where to generate video
+
+**Multimodal AI:** If your chat can generate video (e.g. Gemini, or future video features), paste the script or scene descriptions **in the same chat**. Otherwise use one of the tools below:
+
+| Tool | Link | Use case — what to copy-paste |
+|------|------|------------------------------|
+| **Runway** | [runwayml.com](https://runwayml.com) | Gen-3 text-to-video / image-to-video. Paste **scene descriptions** or prompts; use script for structure. |
+| **Synthesia** | [synthesia.io](https://synthesia.io) | Talking-head / avatars from script. **Copy-paste your script** into the script field; use your beat list for scenes. |
+| **Descript** | [descript.com](https://descript.com) | Edit video + voice. **Paste script** for voiceover or captions; use storyboard for edit structure. |
+| **CapCut** | [capcut.com](https://www.capcut.com) | Edit short-form. Use **script** for captions and order of clips; use storyboard for cuts. |
+| **Canva** (video) | [canva.com](https://www.canva.com) | Templates + simple edit. Use **script** for text overlays and order; use specs for duration/format. |
+| **Pika** | [pika.art](https://pika.art) | Text/image to video. Paste **scene or shot descriptions** from your storyboard. |
+| **Luma Dream Machine** | [lumalabs.ai](https://lumalabs.ai) | Text/image to video. Paste **shot descriptions** from your PCL-Lite output. |
+
+**Tip:** If the chat gave you **duration, aspect ratio, platform** (e.g. 60s, 9:16, TikTok), set those in the tool before generating or exporting.
+
+---
+
 ## 1. Get the bootstrap
 
 All Video bootstraps are in the **[`bootstrap-video/`](../bootstrap-video/)** folder:
@@ -13,30 +49,11 @@ All Video bootstraps are in the **[`bootstrap-video/`](../bootstrap-video/)** fo
 
 ---
 
-## 2. Where to use it
+## 2. Where to use PCL-Lite
 
-### Chats (recommended to start)
-
-The bootstrap is **text only**: you get **scripts, storyboards, specs, and recommendations**, not generated video. Paste the bootstrap into:
-
-- **ChatGPT** — [chat.openai.com](https://chat.openai.com)
-- **Claude** — [claude.ai](https://claude.ai) or in Cursor
-- **Gemini** — [gemini.google.com](https://gemini.google.com)
-- **DeepSeek** — [chat.deepseek.com](https://chat.deepseek.com)
-- **Cursor** — assistant chat
+Paste the bootstrap into any AI chat (ChatGPT, Claude, Gemini, DeepSeek, Cursor). The chat gives you **scripts, storyboards, specs**. If the chat **can generate video** (e.g. Gemini, or future multimodal video features), use that script in the same chat; otherwise copy it and paste into one of the tools above.
 
 **Test flow:** Open the bootstrap file → copy full content → paste as first message → wait for *"PCL-Lite Video v1.0 Ready"* → send `/persona` commands and tasks.
-
-### Video tools (after the bootstrap)
-
-Use the chat to get **script + specs**, then produce video in your usual tools:
-
-- **Runway** ([runwayml.com](https://runwayml.com)) — Gen-3, editing
-- **Synthesia** ([synthesia.io](https://synthesia.io)) — talking-head / avatars
-- **Descript** ([descript.com](https://descript.com)) — editing, voice
-- **CapCut / Canva** — editing, templates
-
-**Workflow:** Chat (bootstrap video) → script & specs → Runway / CapCut / etc. → final video.
 
 ---
 

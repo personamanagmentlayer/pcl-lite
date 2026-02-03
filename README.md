@@ -1,7 +1,5 @@
 # PCL-Lite: Persona Control Language — Embedded Runtime
 
-<p align="center"><img src="./logo/logo.png" width="200" alt="PCL-Lite logo" /> <strong>PCL-Lite</strong></p>
-
 **PCL-Lite** is a lightweight, portable implementation of the *Persona Control Language* (PCL) protocol. It turns any AI chat session (ChatGPT, Claude, Gemini, DeepSeek) into a **multi-agent orchestration system** with no external infrastructure.
 
 Inject it via a single bootstrap prompt to orchestrate, configure, and coordinate specialized personas directly in your conversation.
@@ -151,8 +149,7 @@ PCL-Lite is an embedded variant of the full **PCL** (Persona Control Language) s
 
 ## License
 
-This project is licensed under **Apache-2.0**. See [LICENSE](./LICENSE) for details.  
-**Logo:** Official PCL-Lite logo and usage guidelines → [logo/](./logo/).
+This project is licensed under **Apache-2.0**. See [LICENSE](./LICENSE) for details.
 
 ---
 
